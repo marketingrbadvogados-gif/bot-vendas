@@ -87,7 +87,7 @@ def webhook():
 
     elif event in ["PAYMENT_RECEIVED", "PAYMENT_CONFIRMED"]:
         message = (
-            f"✅ **VENDA PAGA**\n"
+           f"@everyone\n✅ **VENDA PAGA**\n"
             f"━━━━━━━━━━━━━━━━━━\n"
             f"👤 Cliente: {customer_name}\n"
             f"💵 Valor: {value}\n"
