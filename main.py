@@ -73,7 +73,7 @@ def webhook():
 
     if event == "PAYMENT_CREATED":
         message = (
-            f"🛒 **NOVA VENDA GERADA**\n"
+            f"@everyone\n🛒 **NOVA VENDA GERADA**\n"
             f"━━━━━━━━━━━━━━━━━━\n"
             f"👤 Cliente: {customer_name}\n"
             f"💵 Valor: {value}\n"
