@@ -1,0 +1,704 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>O Guia do Dinheiro que o Aposentado Pode Estar Deixando Para Trás</title>
+<meta name="description" content="Uma auditoria guiada em 30 dias para conferir valores esquecidos, descontos indevidos, benefícios e economias — usando apenas canais oficiais e gratuitos. Edição 2026, com 2 bônus.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* ---------- tokens: tema claro completo ---------- */
+:root{
+  --paper:#F3F4F0;
+  --sheet:#FBFBF8;
+  --sheet-2:#EDEFE9;
+  --ink:#14201C;
+  --ink-soft:#43524C;
+  --ink-faint:#6C7A73;
+  --line:#D8DCD3;
+  --line-strong:#B9C0B4;
+  --pine:#1E5B4A;
+  --pine-wash:#E3EDE7;
+  --amber:#9C6512;
+  --amber-wash:#F6EBD8;
+  --shadow:12px 14px 0 rgba(20,32,28,.06);
+  --shadow-lift:0 2px 0 rgba(20,32,28,.10);
+  --on-pine:#FFFFFF;
+  --cta-edge:#123A2F;
+  --band:#123A2F;
+  --band-hi:#F2F7F3;
+  --band-txt:#C9DED4;
+  --band-soft:#9FCBB8;
+  --focus:#B4741B;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#121815;
+    --sheet:#1A211D;
+    --sheet-2:#222A25;
+    --ink:#E7EBE5;
+    --ink-soft:#B3BDB6;
+    --ink-faint:#8B968E;
+    --line:#2C3630;
+    --line-strong:#3E4A43;
+    --pine:#69BC9F;
+    --pine-wash:#1B2A24;
+    --amber:#E0A455;
+    --amber-wash:#2A2318;
+    --shadow:12px 14px 0 rgba(0,0,0,.28);
+    --shadow-lift:0 2px 0 rgba(0,0,0,.4);
+    --on-pine:#0E1613;
+    --cta-edge:rgba(0,0,0,.55);
+    --band:#0F1B16;
+    --band-hi:#F2F7F3;
+    --band-txt:#B9D6C8;
+    --band-soft:#7FAF9B;
+    --focus:#E0A455;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#121815;
+  --sheet:#1A211D;
+  --sheet-2:#222A25;
+  --ink:#E7EBE5;
+  --ink-soft:#B3BDB6;
+  --ink-faint:#8B968E;
+  --line:#2C3630;
+  --line-strong:#3E4A43;
+  --pine:#69BC9F;
+  --pine-wash:#1B2A24;
+  --amber:#E0A455;
+  --amber-wash:#2A2318;
+  --shadow:12px 14px 0 rgba(0,0,0,.28);
+  --shadow-lift:0 2px 0 rgba(0,0,0,.4);
+  --on-pine:#0E1613;
+  --cta-edge:rgba(0,0,0,.55);
+  --band:#0F1B16;
+  --band-hi:#F2F7F3;
+  --band-txt:#B9D6C8;
+  --band-soft:#7FAF9B;
+  --focus:#E0A455;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Sans 3","Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:19px;
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:2px}
+
+/* ---------- estrutura ---------- */
+.wrap{width:100%;max-width:720px;margin:0 auto;padding:0 20px}
+section{padding:56px 0;border-top:1px solid var(--line)}
+section:first-of-type{border-top:0}
+.stack{display:flex;flex-direction:column;gap:22px}
+.stack-sm{display:flex;flex-direction:column;gap:12px}
+
+/* ---------- tipografia ---------- */
+h1,h2,h3{font-family:"Zilla Slab",Georgia,serif;text-wrap:balance;margin:0;line-height:1.14;letter-spacing:-.01em}
+h1{font-size:clamp(2.05rem,7vw,3.1rem);font-weight:700}
+h2{font-size:clamp(1.55rem,4.6vw,2.15rem);font-weight:700}
+h3{font-size:1.22rem;font-weight:600;line-height:1.3}
+p{margin:0}
+.lead{font-size:1.16rem;color:var(--ink-soft)}
+strong{font-weight:700}
+em{font-style:italic}
+.label{
+  font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  font-size:.74rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--pine);
+}
+.label.amber{color:var(--amber)}
+.muted{color:var(--ink-faint);font-size:.95rem}
+
+/* ---------- barra topo ---------- */
+.topbar{
+  background:var(--band);color:var(--band-hi);
+  font-family:"IBM Plex Mono",monospace;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;
+  padding:9px 0;text-align:center;
+}
+
+/* ---------- hero ---------- */
+.hero{padding-top:44px;padding-bottom:8px}
+.hero h1{margin-top:14px}
+.hero .lead{margin-top:18px;font-size:1.2rem;max-width:34ch}
+.rule{height:1px;background:var(--line-strong);border:0;margin:0}
+
+/* capa desenhada em css */
+.cover-area{display:flex;justify-content:center;padding:38px 0 6px}
+.cover-set{position:relative;width:min(300px,72vw)}
+.bonus-sheet{
+  position:absolute;top:26px;background:var(--sheet-2);border:1px solid var(--line-strong);
+  width:78%;height:88%;box-shadow:var(--shadow-lift);
+}
+.bonus-sheet.b1{left:-26px;transform:rotate(-5deg)}
+.bonus-sheet.b2{right:-26px;transform:rotate(4deg)}
+.bonus-sheet span{
+  position:absolute;bottom:14px;left:14px;font-family:"IBM Plex Mono",monospace;
+  font-size:.66rem;letter-spacing:.12em;color:var(--ink-faint);
+}
+.cover{
+  position:relative;background:var(--band);color:var(--band-hi);
+  border:1px solid var(--band);border-left:9px solid var(--amber);
+  padding:26px 22px 22px;box-shadow:var(--shadow);
+  aspect-ratio:1/1.42;display:flex;flex-direction:column;justify-content:space-between;
+}
+.cover .kicker{font-family:"IBM Plex Mono",monospace;font-size:.63rem;letter-spacing:.16em;color:var(--band-soft)}
+.cover .ct{font-family:"Zilla Slab",Georgia,serif;font-size:1.42rem;font-weight:700;line-height:1.1;letter-spacing:-.01em}
+.cover .cs{font-size:.82rem;color:var(--band-txt);line-height:1.4}
+.cover .stamp{
+  align-self:flex-start;border:1.5px solid var(--band-soft);color:var(--band-soft);
+  font-family:"IBM Plex Mono",monospace;font-size:.6rem;letter-spacing:.12em;
+  padding:4px 8px;transform:rotate(-2deg);
+}
+
+/* ---------- botões ---------- */
+.cta{
+  display:block;width:100%;text-align:center;text-decoration:none;
+  background:var(--pine);color:var(--on-pine);
+  font-family:"Source Sans 3",sans-serif;font-size:1.14rem;font-weight:700;line-height:1.25;
+  padding:19px 20px;border:1px solid var(--cta-edge);
+  box-shadow:5px 5px 0 var(--cta-edge);
+  transition:transform .12s ease, box-shadow .12s ease;
+}
+.cta:hover{transform:translate(2px,2px);box-shadow:3px 3px 0 var(--cta-edge)}
+.cta:active{transform:translate(5px,5px);box-shadow:0 0 0 var(--cta-edge)}
+.cta small{display:block;font-weight:400;font-size:.83rem;opacity:.85;margin-top:3px}
+.cta-note{text-align:center;font-size:.9rem;color:var(--ink-faint);margin-top:12px}
+
+/* ---------- fichas ---------- */
+.sheet{
+  background:var(--sheet);border:1px solid var(--line);
+  padding:22px 20px;box-shadow:var(--shadow-lift);
+}
+.sheet.tabbed{position:relative;padding-top:26px}
+.sheet .tab{
+  position:absolute;top:-1px;left:-1px;background:var(--pine);color:var(--on-pine);
+  font-family:"IBM Plex Mono",monospace;font-size:.66rem;font-weight:600;letter-spacing:.12em;
+  padding:4px 10px;
+}
+.sheet.amber-tab .tab{background:var(--amber)}
+.grid-2{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:620px){.grid-2{grid-template-columns:1fr 1fr}}
+
+/* movimentos */
+.moves{display:grid;grid-template-columns:1fr;gap:0;border:1px solid var(--line);background:var(--sheet)}
+@media(min-width:620px){.moves{grid-template-columns:1fr 1fr}}
+.move{padding:18px 20px;border-bottom:1px solid var(--line)}
+.move:last-child{border-bottom:0}
+@media(min-width:620px){
+  .move{border-right:1px solid var(--line)}
+  .move:nth-child(2n){border-right:0}
+  .move:nth-child(n+3){border-bottom:0}
+}
+.move b{display:block;font-family:"IBM Plex Mono",monospace;font-size:.76rem;letter-spacing:.14em;color:var(--pine);margin-bottom:5px}
+.move span{font-size:1rem;color:var(--ink-soft);line-height:1.5}
+
+/* listas */
+ul.marks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:11px}
+ul.marks li{position:relative;padding-left:30px;line-height:1.5}
+ul.marks li::before{
+  content:"";position:absolute;left:0;top:.55em;width:13px;height:13px;
+  border:1.5px solid var(--pine);background:var(--pine-wash);
+}
+ul.marks.warn li::before{border-color:var(--amber);background:var(--amber-wash)}
+
+/* diagnóstico interativo */
+.diag{border:1px solid var(--line-strong);background:var(--sheet)}
+.diag-head{padding:18px 20px;border-bottom:1px solid var(--line);background:var(--sheet-2)}
+.diag ul{list-style:none;margin:0;padding:0}
+.diag li{border-bottom:1px solid var(--line)}
+.diag label{
+  display:flex;gap:14px;align-items:flex-start;padding:14px 20px;cursor:pointer;
+  font-size:1.02rem;line-height:1.45;
+}
+.diag label:hover{background:var(--pine-wash)}
+.diag input{
+  appearance:none;-webkit-appearance:none;flex:none;margin:2px 0 0;
+  width:24px;height:24px;border:2px solid var(--line-strong);background:var(--sheet);cursor:pointer;
+}
+.diag input:checked{background:var(--pine);border-color:var(--pine)}
+.diag input:checked::after{
+  content:"";display:block;width:7px;height:13px;margin:1px auto 0;
+  border:solid var(--sheet);border-width:0 3px 3px 0;transform:rotate(43deg);
+}
+.diag-out{padding:18px 20px;background:var(--sheet-2);border-top:1px solid var(--line-strong)}
+.diag-count{font-family:"IBM Plex Mono",monospace;font-size:1.5rem;font-weight:600;color:var(--pine);font-variant-numeric:tabular-nums}
+.diag-msg{margin-top:4px;color:var(--ink-soft);line-height:1.5}
+
+/* sumário de capítulos */
+.part{margin-top:26px}
+.part-title{font-family:"IBM Plex Mono",monospace;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);padding-bottom:8px;border-bottom:1px solid var(--line-strong)}
+.chap{display:flex;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.chap .n{font-family:"IBM Plex Mono",monospace;font-size:.95rem;color:var(--ink-faint);flex:none;width:2ch;padding-top:2px;font-variant-numeric:tabular-nums}
+.chap h3{font-size:1.06rem;font-weight:700}
+.chap p{font-size:.97rem;color:var(--ink-soft);margin-top:3px;line-height:1.5}
+
+/* plano 30 dias */
+.week{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.week .wn{
+  flex:none;width:52px;height:52px;border:1px solid var(--pine);background:var(--pine-wash);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  font-family:"IBM Plex Mono",monospace;line-height:1.05;color:var(--pine);
+}
+.week .wn i{font-style:normal;font-size:.56rem;letter-spacing:.1em}
+.week .wn b{font-size:1.3rem}
+
+/* oferta */
+.offer{border:2px solid var(--pine);background:var(--sheet);box-shadow:var(--shadow)}
+.offer-head{background:var(--pine);color:var(--on-pine);padding:14px 20px;font-family:"IBM Plex Mono",monospace;font-size:.76rem;letter-spacing:.14em}
+.offer-body{padding:22px 20px}
+.itemline{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-bottom:1px dashed var(--line-strong);font-size:1.01rem}
+.itemline span:last-child{font-family:"IBM Plex Mono",monospace;color:var(--ink-faint);white-space:nowrap;font-variant-numeric:tabular-nums}
+.total{display:flex;justify-content:space-between;padding:14px 0 4px;font-weight:700}
+.price-box{text-align:center;padding:22px 0 6px}
+.price-old{color:var(--ink-faint);text-decoration:line-through;font-family:"IBM Plex Mono",monospace}
+.price{font-family:"Zilla Slab",Georgia,serif;font-size:3.3rem;font-weight:700;line-height:1;color:var(--pine);letter-spacing:-.02em}
+.price sup{font-size:1.2rem;top:-1.1em;font-weight:600}
+.price-sub{color:var(--ink-soft);margin-top:6px}
+
+/* garantia */
+.guarantee{display:flex;gap:18px;align-items:flex-start;border:1px solid var(--amber);background:var(--amber-wash);padding:20px}
+.seal{
+  flex:none;width:74px;height:74px;border:2px solid var(--amber);border-radius:50%;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  font-family:"IBM Plex Mono",monospace;color:var(--amber);line-height:1;transform:rotate(-6deg);
+}
+.seal b{font-size:1.6rem}
+.seal i{font-style:normal;font-size:.54rem;letter-spacing:.1em;margin-top:3px}
+
+/* fontes oficiais */
+.orgs{display:flex;flex-wrap:wrap;gap:8px}
+.orgs li{
+  list-style:none;font-family:"IBM Plex Mono",monospace;font-size:.76rem;
+  border:1px solid var(--line-strong);background:var(--sheet);padding:6px 10px;color:var(--ink-soft);
+}
+
+/* faq */
+details{border-bottom:1px solid var(--line);padding:4px 0}
+details summary{
+  cursor:pointer;list-style:none;padding:14px 34px 14px 0;position:relative;
+  font-weight:700;font-size:1.05rem;line-height:1.4;
+}
+details summary::-webkit-details-marker{display:none}
+details summary::after{
+  content:"+";position:absolute;right:4px;top:12px;
+  font-family:"IBM Plex Mono",monospace;font-size:1.4rem;color:var(--pine);line-height:1;
+}
+details[open] summary::after{content:"–"}
+details .a{padding:0 0 16px;color:var(--ink-soft);line-height:1.55}
+
+/* rodapé */
+footer{background:var(--band);color:var(--band-txt);padding:44px 0 100px;border-top:0}
+footer .wrap{display:flex;flex-direction:column;gap:16px}
+footer h3{color:var(--band-hi);font-size:1.05rem}
+footer p{font-size:.92rem;line-height:1.6}
+footer .fine{font-size:.82rem;color:var(--band-soft)}
+
+/* barra fixa */
+.sticky{
+  position:fixed;left:0;right:0;bottom:0;z-index:40;
+  background:var(--sheet);border-top:1px solid var(--line-strong);
+  padding:10px 16px calc(10px + env(safe-area-inset-bottom));
+  display:flex;align-items:center;gap:14px;
+  transform:translateY(110%);transition:transform .25s ease;
+}
+.sticky.on{transform:translateY(0)}
+.sticky .sp{flex:1;line-height:1.15}
+.sticky .sp b{font-family:"Zilla Slab",Georgia,serif;font-size:1.3rem;color:var(--pine)}
+.sticky .sp span{display:block;font-size:.74rem;color:var(--ink-faint);font-family:"IBM Plex Mono",monospace}
+.sticky .cta{width:auto;padding:13px 20px;font-size:1rem;box-shadow:3px 3px 0 var(--cta-edge)}
+
+@media (prefers-reduced-motion: reduce){
+  *{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">Edição 2026 · dados oficiais conferidos em 17/08/2026</div>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="label">Dinheiro &amp; Direitos dos Idosos</p>
+    <h1>Existe dinheiro parado no seu CPF que você nunca conferiu?</h1>
+    <p class="lead">Valores esquecidos em bancos, cotas antigas do PIS/PASEP, restituição de IR, seguro embutido em empréstimo, desconto que ninguém explica. Este guia mostra <strong>onde conferir cada um</strong>, em canais oficiais e gratuitos, em 30 dias.</p>
+
+    <div class="cover-area">
+      <div class="cover-set">
+        <div class="bonus-sheet b1" aria-hidden="true"><span>BÔNUS 1</span></div>
+        <div class="bonus-sheet b2" aria-hidden="true"><span>BÔNUS 2</span></div>
+        <div class="cover">
+          <p class="kicker">DINHEIRO &amp; DIREITOS DOS IDOSOS</p>
+          <div>
+            <p class="ct">O Guia do Dinheiro que o Aposentado Pode Estar Deixando Para Trás</p>
+            <p class="cs" style="margin-top:10px">Encontrar valores · conferir direitos · reduzir despesas · proteger a renda</p>
+          </div>
+          <p class="stamp">EDIÇÃO 2026</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section style="padding-top:34px">
+  <div class="wrap stack">
+    <a class="cta" href="#oferta" data-checkout>Quero fazer minha auditoria — R$ 47<small>eBook + 2 bônus · acesso imediato · 7 dias de garantia</small></a>
+    <p class="cta-note">Pagamento por Pix, cartão ou boleto. Você recebe em PDF, para ler no celular, tablet ou computador — e pode imprimir.</p>
+
+    <div class="moves">
+      <div class="move"><b>RECEBER</b><span>Valores esquecidos, cotas antigas, restituições e benefícios que podem estar disponíveis.</span></div>
+      <div class="move"><b>RECUPERAR</b><span>Cobranças, seguros e descontos em que pode existir valor a restituir.</span></div>
+      <div class="move"><b>ECONOMIZAR</b><span>Despesas que podem cair e serviços que talvez você pague sem precisar.</span></div>
+      <div class="move"><b>PROTEGER</b><span>A aposentadoria, os contratos, os dados e o dinheiro que já entra na conta.</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap stack">
+    <p class="label amber">A situação</p>
+    <h2>O problema quase nunca é falta de direito. É falta de conferência.</h2>
+    <p class="lead">Ninguém liga para o aposentado avisando que existe um valor em nome dele, que a tarifa do pacote bancário subiu, que há um seguro embutido no empréstimo ou que um vínculo antigo não entrou no cálculo da aposentadoria. Esses sistemas são públicos e gratuitos — mas só respondem a quem procura.</p>
+    <div class="sheet tabbed">
+      <p class="tab">ACONTECE TODO MÊS</p>
+      <ul class="marks warn">
+        <li>Desconto no benefício que aparece no extrato e ninguém sabe explicar de onde veio.</li>
+        <li>Empréstimo consignado ou cartão que o titular não reconhece ter contratado.</li>
+        <li>Seguro prestamista pago dentro da parcela por anos — e nunca usado quando poderia ter sido.</li>
+        <li>Vínculo de trabalho antigo que não aparece no CNIS e pode ter afetado o cálculo.</li>
+        <li>Remédio comprado todo mês na farmácia sem conferir a lista do Farmácia Popular.</li>
+        <li>Golpista ligando para prometer "dinheiro liberado" mediante uma "taxa" — e a família sem saber como conferir sozinha.</li>
+      </ul>
+    </div>
+    <p>Este guia não é um texto sobre leis. É uma <strong>auditoria guiada</strong>: cada capítulo é uma consulta, com passo a passo, o que significa cada resultado e qual é o próximo passo — inclusive quando o resultado é "não apareceu nada".</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap stack">
+    <p class="label">Diagnóstico rápido · 1 minuto</p>
+    <h2>Marque o que combina com a sua história</h2>
+    <p>É o mesmo diagnóstico que abre o guia. Toque nos itens que se aplicam a você ou ao seu pai, mãe ou avô.</p>
+
+    <div class="diag">
+      <div class="diag-head"><p class="label">12 situações que pedem conferência</p></div>
+      <ul id="diag-list">
+        <li><label><input type="checkbox"> Já tive conta em vários bancos ou consórcio e não lembro como tudo foi encerrado.</label></li>
+        <li><label><input type="checkbox"> Trabalhei com carteira assinada ou fui servidor entre 1971 e 1988.</label></li>
+        <li><label><input type="checkbox"> Já tive Imposto de Renda descontado e nunca conferi restituições ou isenções.</label></li>
+        <li><label><input type="checkbox"> Minha aposentadoria parece menor do que eu esperava, ou faltam vínculos no CNIS.</label></li>
+        <li><label><input type="checkbox"> Pago pacote de tarifas bancárias e nunca conferi se preciso dele.</label></li>
+        <li><label><input type="checkbox"> Tenho ou já tive empréstimo, financiamento, cartão consignado ou consórcio.</label></li>
+        <li><label><input type="checkbox"> Não sei se existe seguro prestamista ligado a algum crédito meu.</label></li>
+        <li><label><input type="checkbox"> Meu benefício tem descontos que eu não entendo perfeitamente.</label></li>
+        <li><label><input type="checkbox"> Gasto muito com remédios e nunca conferi o Farmácia Popular.</label></li>
+        <li><label><input type="checkbox"> Tenho 60 anos ou mais e nunca conferi gratuidade ou desconto em viagem interestadual.</label></li>
+        <li><label><input type="checkbox"> Há familiares falecidos que podem ter deixado valores, seguros ou cotas.</label></li>
+        <li><label><input type="checkbox"> Já recebi ligação ou mensagem prometendo "dinheiro liberado".</label></li>
+      </ul>
+      <div class="diag-out">
+        <p class="diag-count"><span id="diag-n">0</span> de 12 marcados</p>
+        <p class="diag-msg" id="diag-msg">Marque os itens acima para ver o que isso significa.</p>
+      </div>
+    </div>
+    <p class="muted">Nenhuma informação sai do seu aparelho. Esta marcação é só para você.</p>
+    <a class="cta" href="#oferta" data-checkout>Começar minha auditoria — R$ 47<small>eBook + 2 bônus · acesso imediato</small></a>
+  </div>
+</section>
+
+<section>
+  <div class="wrap stack">
+    <p class="label">O que você recebe · item 1 de 3</p>
+    <h2>O eBook principal: 12 capítulos, 6 partes, uma consulta de cada vez</h2>
+    <p class="lead">Cada capítulo tem: quem deve conferir, o passo a passo oficial, como interpretar o resultado, o que guardar e o que fazer depois que encontrar algo.</p>
+
+    <div class="part">
+      <p class="part-title">Parte I — Dinheiro para receber</p>
+      <div class="chap"><span class="n">1</span><div><h3>Valores a Receber no Banco Central</h3><p>A consulta do SVR passo a passo, o que cada resultado significa e o caminho quando o valor é de pessoa falecida.</p></div></div>
+      <div class="chap"><span class="n">2</span><div><h3>Cotas do antigo PIS/PASEP</h3><p>Quem trabalhou entre 1971 e 1988, como consultar no REPIS Cidadão e por que isso não é a mesma coisa que o abono salarial.</p></div></div>
+      <div class="chap"><span class="n">3</span><div><h3>Imposto de Renda: o que pode voltar</h3><p>Restituição, o lote especial de 2026, a parcela isenta a partir dos 65 anos e a isenção por doença prevista em lei.</p></div></div>
+    </div>
+
+    <div class="part">
+      <p class="part-title">Parte II — Auditoria do INSS</p>
+      <div class="chap"><span class="n">4</span><div><h3>CNIS, carta de concessão e revisão</h3><p>Como ler os três documentos da sua aposentadoria, o que procurar, o prazo de 10 anos e quando NÃO protocolar sozinho.</p></div></div>
+    </div>
+
+    <div class="part">
+      <p class="part-title">Parte III — Dinheiro para recuperar</p>
+      <div class="chap"><span class="n">5</span><div><h3>Raio-X bancário: Registrato e tarifas</h3><p>CCS e SCR do Banco Central: quais contas e dívidas existem no seu nome e como sair do pacote de tarifas que você não usa.</p></div></div>
+      <div class="chap"><span class="n">6</span><div><h3>Seguro prestamista</h3><p>Como localizar na SUSEP, os 4 cenários possíveis (sinistro, cancelamento, quitação antecipada, venda casada) e a trilha de reclamação.</p></div></div>
+      <div class="chap"><span class="n">7</span><div><h3>Consignado, RMC e RCC</h3><p>A conferência em duas telas, os sinais que pedem investigação e o que fazer quando você não reconhece a contratação.</p></div></div>
+    </div>
+
+    <div class="part">
+      <p class="part-title">Parte IV — Dinheiro para economizar</p>
+      <div class="chap"><span class="n">8</span><div><h3>Remédios, transporte, energia e contas</h3><p>Farmácia Popular, Carteira da Pessoa Idosa, Tarifa Social e Desconto Social de energia, água e IPTU — com a tabela para virar economia anual.</p></div></div>
+    </div>
+
+    <div class="part">
+      <p class="part-title">Parte V — Dinheiro da família</p>
+      <div class="chap"><span class="n">9</span><div><h3>Valores de pessoas falecidas</h3><p>SVR, cotas, benefício não recebido em vida, seguros, investimentos e o erro comum sobre planos econômicos.</p></div></div>
+    </div>
+
+    <div class="part">
+      <p class="part-title">Parte VI — Proteger o que é seu</p>
+      <div class="chap"><span class="n">10</span><div><h3>Anti-golpe e trilha de reclamação</h3><p>A regra das 4 confirmações, como montar o pacote de prova e a ordem correta: SAC, Ouvidoria, Consumidor.gov.br, BC, SUSEP.</p></div></div>
+      <div class="chap"><span class="n">11</span><div><h3>Plano de 30 dias + Checklist Mestre</h3><p>O calendário dia a dia e a tabela final para anotar cada resultado da auditoria.</p></div></div>
+      <div class="chap"><span class="n">12</span><div><h3>Quando procurar ajuda</h3><p>Os três níveis — faça você mesmo, tenha cuidado, procure análise individual — e o mini glossário de siglas.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap stack">
+    <p class="label amber">Bônus incluídos</p>
+    <h2>Saber onde procurar é metade. A outra metade é pedir do jeito certo.</h2>
+
+    <div class="sheet tabbed amber-tab">
+      <p class="tab">BÔNUS 1 · INCLUSO</p>
+      <h3 style="margin-bottom:8px">Modelos Profissionais de Requerimentos</h3>
+      <p><strong>26 modelos prontos e adaptáveis</strong>, com a estrutura usada na prática advocatícia. Cada um mostra quando usar, a lógica do pedido e quais documentos costumam acompanhar.</p>
+      <ul class="marks" style="margin-top:16px">
+        <li>Pedido de resgate após localizar valor no SVR e pedido de cotas PIS/PASEP</li>
+        <li>Isenção de IR por moléstia grave e esclarecimento de retenção indevida</li>
+        <li>Acerto de vínculo no CNIS e pedido de revisão do INSS com estrutura cautelosa</li>
+        <li>Cópia de contrato bancário, migração para serviços essenciais e contestação de consignado, RMC e RCC</li>
+        <li>Apólice, aviso de sinistro, cancelamento e contestação de seguro prestamista</li>
+        <li>Tarifa Social de energia e água, IPTU municipal e valores de familiar falecido</li>
+        <li>Reclamação ao SAC, Ouvidoria, Consumidor.gov.br, Banco Central e SUSEP</li>
+      </ul>
+    </div>
+
+    <div class="sheet tabbed amber-tab">
+      <p class="tab">BÔNUS 2 · INCLUSO</p>
+      <h3 style="margin-bottom:8px">Dossiê de Provas e Protocolos</h3>
+      <p>O eBook ensina onde procurar. O Bônus 1 ajuda a escrever. Este resolve a terceira parte: <strong>como provar</strong>. São <strong>31 seções</strong> com o método P.E.D.I.D.O., o mapa Problema → Prova → Pedido e fichas preenchíveis.</p>
+      <ul class="marks" style="margin-top:16px">
+        <li>Como montar a pasta "Minha Auditoria Financeira" com as 10 subpastas numeradas</li>
+        <li>Seu caso em uma página e a linha do tempo que organiza todo o resto</li>
+        <li>Que prova serve para cada tema: SVR, REPIS, IR, CNIS, tarifas, seguro, consignado, tarifa social, falecidos, fraude</li>
+        <li>Como salvar prints, e-mails, WhatsApp e protocolos de um jeito que serve para conferência</li>
+        <li>Checklist antes de enviar, checklist depois de protocolar e painel de acompanhamento de 30 dias</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap stack">
+    <p class="label">Como funciona na prática</p>
+    <h2>Quatro semanas, uma tarefa por dia</h2>
+    <p class="lead">Você não precisa resolver tudo hoje. Precisa criar sequência. O capítulo 11 traz o calendário completo, dia a dia.</p>
+    <div>
+      <div class="week"><div class="wn"><i>SEM</i><b>1</b></div><div><h3>Dinheiro fácil de consultar</h3><p class="muted">SVR, REPIS, Receita Federal, download do CNIS e da carta de concessão, organização dos comprovantes.</p></div></div>
+      <div class="week"><div class="wn"><i>SEM</i><b>2</b></div><div><h3>Vida bancária</h3><p class="muted">Registrato (CCS e SCR), tarifas dos últimos meses, consignados e descontos no Meu INSS, pedido de contratos.</p></div></div>
+      <div class="week"><div class="wn"><i>SEM</i><b>3</b></div><div><h3>Seguro e economia</h3><p class="muted">Consulta de seguros na SUSEP, apólices, Farmácia Popular, transporte interestadual e benefícios locais.</p></div></div>
+      <div class="week"><div class="wn"><i>SEM</i><b>4</b></div><div><h3>Resolver o que apareceu</h3><p class="muted">Abrir pedidos, organizar protocolos, escalar para Ouvidoria e órgãos, e somar o resultado final da auditoria.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap stack">
+    <p class="label">Honestidade primeiro</p>
+    <h2>O que este guia não é</h2>
+    <div class="grid-2">
+      <div class="sheet">
+        <p class="label">É PARA VOCÊ SE…</p>
+        <ul class="marks" style="margin-top:14px">
+          <li>É aposentado ou pensionista e quer conferir a própria situação</li>
+          <li>Cuida do pai, da mãe ou de um avô e quer organizar isso por eles</li>
+          <li>Prefere passo a passo e checklist a texto jurídico</li>
+          <li>Quer usar apenas canais oficiais e gratuitos, sem intermediário</li>
+        </ul>
+      </div>
+      <div class="sheet">
+        <p class="label amber">NÃO É PARA VOCÊ SE…</p>
+        <ul class="marks warn" style="margin-top:14px">
+          <li>Procura garantia de que vai receber dinheiro</li>
+          <li>Quer que alguém faça as consultas no seu lugar</li>
+          <li>Espera uma tese jurídica pronta para processo</li>
+          <li>Não pretende separar documentos nem guardar protocolos</li>
+        </ul>
+      </div>
+    </div>
+    <div class="sheet tabbed">
+      <p class="tab">AVISO DO PRÓPRIO GUIA</p>
+      <p>Este é um material informativo e educativo. <strong>Nenhum capítulo é promessa de recebimento.</strong> Em vários temas, o direito depende de requisitos, documentos, datas, tipo de contrato, renda, município ou situação individual. Quando houver risco de perda de prazo, revisão de benefício, contrato complexo, negativa administrativa ou possibilidade de ação judicial, o guia orienta procurar análise profissional individualizada — e explica exatamente quando esse é o caso.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap stack">
+    <p class="label">De onde vem a informação</p>
+    <h2>Só canal oficial. Nenhum atalho, nenhuma "taxa de liberação".</h2>
+    <p>Todos os caminhos do guia levam a sistemas públicos e gratuitos, com os endereços reunidos no final do livro e conferidos em 17 de agosto de 2026. A primeira regra de segurança do material é direta: <strong>nunca pague taxa para receber dinheiro que já é seu</strong>, e nunca informe senha, token ou código a quem liga para você.</p>
+    <ul class="orgs">
+      <li>Banco Central · SVR</li><li>Banco Central · Registrato</li><li>REPIS Cidadão</li><li>CAIXA</li>
+      <li>Meu INSS</li><li>Receita Federal</li><li>Gov.br</li><li>SUSEP</li>
+      <li>ANEEL · Tarifa Social</li><li>Farmácia Popular</li><li>Consumidor.gov.br</li><li>Fala.BR</li>
+      <li>Estatuto da Pessoa Idosa</li><li>Lei 8.213/1991</li><li>Código de Defesa do Consumidor</li>
+    </ul>
+  </div>
+</section>
+
+<section id="oferta">
+  <div class="wrap stack">
+    <p class="label">A oferta completa</p>
+    <h2>Tudo o que entra hoje</h2>
+    <div class="offer">
+      <p class="offer-head">PACOTE COMPLETO · EDIÇÃO 2026</p>
+      <div class="offer-body">
+        <div class="itemline"><span>eBook principal — 12 capítulos, 6 partes</span><span>R$ 97</span></div>
+        <div class="itemline"><span>Bônus 1 — 26 modelos de requerimentos</span><span>R$ 67</span></div>
+        <div class="itemline"><span>Bônus 2 — Dossiê de Provas e Protocolos, 31 seções</span><span>R$ 47</span></div>
+        <div class="itemline"><span>Checklist Mestre + plano de 30 dias + fichas preenchíveis</span><span>incluso</span></div>
+        <div class="total"><span>Valor total</span><span>R$ 211</span></div>
+
+        <div class="price-box">
+          <p class="price-old">R$ 211</p>
+          <p class="price"><sup>R$</sup>47</p>
+          <p class="price-sub">à vista no Pix, ou parcelado no cartão</p>
+        </div>
+
+        <a class="cta" href="#" data-checkout>Quero o guia e os 2 bônus<small>acesso imediato · PDF para celular, computador ou impressão</small></a>
+        <p class="cta-note">Após o pagamento, o link de download chega no seu e-mail. Sem mensalidade, sem renovação automática.</p>
+      </div>
+    </div>
+
+    <div class="guarantee">
+      <div class="seal" aria-hidden="true"><b>7</b><i>DIAS</i></div>
+      <div class="stack-sm">
+        <h3>Garantia incondicional de 7 dias</h3>
+        <p style="font-size:1rem;line-height:1.5">Leia tudo, faça as primeiras consultas e, se concluir que o material não é para você, peça o reembolso dentro de 7 dias. Devolvemos o valor integral, sem perguntas. É o seu direito de arrependimento previsto no Código de Defesa do Consumidor — aqui ele está escrito na página, não escondido.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap stack">
+    <p class="label">Perguntas frequentes</p>
+    <h2>O que costumam perguntar antes de comprar</h2>
+    <div>
+      <details>
+        <summary>Vou receber dinheiro com certeza?</summary>
+        <div class="a">Não, e qualquer pessoa que prometa isso está enganando você. O guia não promete recebimento: ele mostra onde conferir, o que cada resultado significa e qual é o próximo passo. Em muitos casos o resultado da consulta é "não há valor" — e isso também tem utilidade, porque encerra a dúvida e protege contra golpista que promete "valor escondido" mediante pagamento.</div>
+      </details>
+      <details>
+        <summary>É um livro impresso?</summary>
+        <div class="a">Não. São arquivos digitais em PDF — o eBook principal e os dois bônus. Você lê no celular, no tablet ou no computador, aumenta a letra à vontade e pode imprimir se preferir ler no papel.</div>
+      </details>
+      <details>
+        <summary>Preciso entender de internet para usar?</summary>
+        <div class="a">Precisa saber abrir um site e um aplicativo. Cada consulta tem passo a passo numerado, e o material foi escrito para ser feito junto com um filho, neto ou alguém de confiança. A primeira coisa que o guia pede é montar uma pasta de documentos — no papel ou no celular, como você preferir.</div>
+      </details>
+      <details>
+        <summary>Isso substitui um advogado?</summary>
+        <div class="a">Não. O material é informativo e educativo, e um capítulo inteiro é dedicado a mostrar onde termina o "faça você mesmo": revisão de benefício com cálculo complexo, fraude não resolvida, contrato difícil, negativa relevante ou prazo jurídico pedem análise individual de um profissional habilitado. O guia serve justamente para você chegar nessa conversa com os documentos organizados.</div>
+      </details>
+      <details>
+        <summary>As consultas custam alguma coisa?</summary>
+        <div class="a">Não. Todas as consultas indicadas são feitas em sistemas públicos e gratuitos — Banco Central, REPIS, Meu INSS, Receita Federal, SUSEP e outros. Você paga apenas pelo material que ensina o caminho. Se alguém cobrar "taxa de liberação" para entregar um valor seu, é golpe.</div>
+      </details>
+      <details>
+        <summary>Serve para conferir a situação de um familiar que já faleceu?</summary>
+        <div class="a">Sim. A Parte V é inteira sobre isso: valores no Banco Central, cotas de PIS/PASEP, benefício não recebido até a data do óbito, seguros e investimentos — com a documentação que costuma ser exigida de herdeiros e as limitações de cada caso.</div>
+      </details>
+      <details>
+        <summary>Como recebo depois de pagar?</summary>
+        <div class="a">O link de download é enviado para o e-mail informado na compra, logo após a confirmação do pagamento. Pix e cartão costumam confirmar em minutos; boleto pode levar até dois dias úteis.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap stack">
+    <h2>O dinheiro que muda a vida do aposentado raramente vem de uma grande oportunidade.</h2>
+    <p class="lead">Ele costuma estar numa pequena restituição, numa tarifa que deixa de sair todo mês, num benefício calculado corretamente, num seguro usado na hora certa ou num golpe evitado. Nada disso aparece sozinho. Aparece quando alguém confere.</p>
+    <a class="cta" href="#" data-checkout>Fazer minha auditoria — R$ 47<small>eBook + 2 bônus · 7 dias de garantia</small></a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <h3>Aviso importante</h3>
+    <p>Material informativo e educativo. Não constitui consulta, parecer ou promessa de resultado, e não substitui análise profissional individualizada. Direitos, prazos e benefícios dependem de requisitos, documentos e da situação de cada pessoa. Serviços públicos, telas e regras podem mudar; confirme sempre se está em um domínio oficial antes de enviar documentos.</p>
+    <p class="fine">Nunca pague "taxa de liberação" para receber dinheiro que já é seu. Não informe senha bancária, código de segurança, token ou código recebido por mensagem a quem liga para você. Na dúvida, encerre o contato e procure o canal oficial por conta própria.</p>
+    <p class="fine">Edição 2026 · endereços oficiais conferidos em 17/08/2026 · Dinheiro &amp; Direitos dos Idosos</p>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky">
+  <div class="sp"><b>R$ 47</b><span>EBOOK + 2 BÔNUS</span></div>
+  <a class="cta" href="#oferta" data-checkout>Quero conferir</a>
+</div>
+
+<script>
+/* ---------------------------------------------------------------
+   CONFIGURAÇÃO — mude só estas duas linhas para publicar.
+   CHECKOUT: cole aqui o link do seu checkout (Kiwify, Hotmart,
+   Asaas, Cartpanda...). Enquanto ficar vazio, os botões apenas
+   rolam a página até a oferta.
+--------------------------------------------------------------- */
+var CHECKOUT = "";
+
+(function () {
+  "use strict";
+
+  if (CHECKOUT) {
+    var botoes = document.querySelectorAll("[data-checkout]");
+    for (var i = 0; i < botoes.length; i++) {
+      botoes[i].href = CHECKOUT;
+      botoes[i].rel = "noopener";
+    }
+  }
+
+  /* diagnóstico */
+  var lista = document.getElementById("diag-list");
+  var saida = document.getElementById("diag-n");
+  var msg = document.getElementById("diag-msg");
+  var textos = [
+    "Marque os itens acima para ver o que isso significa.",
+    "Mesmo um único item já justifica a conferência — e ela é gratuita.",
+    "Alguns pontos merecem conferência. O guia mostra por onde começar.",
+    "Vários pontos em aberto. Faz sentido percorrer o guia inteiro, na ordem das 4 semanas.",
+    "Situação típica de quem nunca fez essa auditoria. Quanto mais itens, mais provável que exista algo para corrigir, cancelar ou receber."
+  ];
+
+  if (lista) {
+    lista.addEventListener("change", function () {
+      var marcados = lista.querySelectorAll("input:checked").length;
+      saida.textContent = marcados;
+      var faixa = marcados === 0 ? 0 : marcados <= 2 ? 1 : marcados <= 5 ? 2 : marcados <= 8 ? 3 : 4;
+      msg.textContent = textos[faixa];
+    });
+  }
+
+  /* barra fixa aparece depois do primeiro scroll */
+  var barra = document.getElementById("sticky");
+  var oferta = document.getElementById("oferta");
+  window.addEventListener("scroll", function () {
+    var passouDobra = window.scrollY > 700;
+    var naOferta = oferta.getBoundingClientRect().top < window.innerHeight && oferta.getBoundingClientRect().bottom > 0;
+    barra.classList.toggle("on", passouDobra && !naOferta);
+  }, { passive: true });
+})();
+</script>
+
+</body>
+</html>
